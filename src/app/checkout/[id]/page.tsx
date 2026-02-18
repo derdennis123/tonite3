@@ -327,12 +327,10 @@ export default function CheckoutPage() {
               {/* QR Code placeholder */}
               <div className="mx-auto mb-6 flex h-48 w-48 items-center justify-center rounded-2xl border border-border bg-white">
                 <div className="grid grid-cols-5 gap-1">
-                  {Array.from({ length: 25 }).map((_, i) => (
+                  {[1,1,1,1,1, 1,0,1,0,1, 1,1,0,1,0, 0,1,1,0,1, 1,0,1,1,1].map((v, i) => (
                     <div
                       key={i}
-                      className={`h-6 w-6 ${
-                        Math.random() > 0.4 ? "bg-black" : "bg-white"
-                      }`}
+                      className={`h-6 w-6 ${v ? "bg-black" : "bg-white"}`}
                     />
                   ))}
                 </div>

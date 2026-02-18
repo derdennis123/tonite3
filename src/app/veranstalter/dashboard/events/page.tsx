@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Plus, MoreVertical, Eye, Edit, Trash2 } from "lucide-react";
+import { Plus, Eye, Edit, Trash2 } from "lucide-react";
 
 const orgEvents = [
   {
